@@ -27,22 +27,19 @@ var vm = new Vue({
 
           for(let i in [...Array(3)]) {
             if(i == 0) {
-               console.log('///////////////////////////////////////////////')
+              //  console.log('///////////////////////////////////////////////')
             }
-
 
             if(this.randoms[i] == this.guesses[i]) {
               this.counter++;
-              console.log(this.counter);
-              console.log("randoms: " + this.randoms[i])
-              console.log("gusses:  " + this.guesses[i])
-              console.log('------------------------------------------------')
+              // console.log(this.counter);
+              // console.log("randoms: " + this.randoms[i])
+              // console.log("gusses:  " + this.guesses[i])
+              // console.log('------------------------------------------------')
             }
           }
-
-
-          console.table("RANDOMS: " + this.randoms)
-          console.table("GUESSES: " + this.guesses)
+          // console.table("RANDOMS: " + this.randoms)
+          // console.table("GUESSES: " + this.guesses)
 
 
 
