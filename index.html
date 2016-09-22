@@ -60,9 +60,9 @@
             </tr>
           </thead>
           <tbody>
-              <tr v-for="n in 3">
-                <td>{{numbers['guesses'][n].value}}</td>
-                <td>{{numbers['randoms'][n].value}}</td>
+              <tr v-for="i in 3">
+                <td>{{guesses[i]}}</td>
+                <td>{{randoms[i]}}</td>
               </tr>
           </tbody>
         </table>
@@ -71,18 +71,18 @@
 		<form name="guessForm" id="guessForm">
 		  <div class="form-group has-feedback">
 			<label for="num1">Number 1</label>
-			<input type="number"  name="number1" id="number1" class="form-control num1" v-model="numbers['guesses'][0].value" placeholder="Number 1" maxlength="2" min="0" max="10" required>
+			<input type="number"  name="number1" id="number1" class="form-control num1" v-model="guesses[0]" placeholder="Number 1" maxlength="2" min="0" max="10" required>
 			<div class="has-errors">
 			  <p class="help-block"></p>
 			</div>
 		  </div>
 		  <div class="form-group has-feedback">
 			<label for="num1">Number 2</label>
-			<input type="number" name="number2" id="number2"  class="form-control num2" v-model="numbers['guesses'][1].value" placeholder="Number 2" maxlength="2" min="0" max="10" required>
+			<input type="number" name="number2" id="number2"  class="form-control num2" v-model="guesses[1]" placeholder="Number 2" maxlength="2" min="0" max="10" required>
 		  </div>
 		  <div class="form-group has-feedback">
 			<label for="num1">Number 3</label>
-			<input type="number" name="number3" id="number3" class="form-control num3" v-model="numbers['guesses'][2].value" placeholder="Number 3" maxlength="2" min="0" max="10" required>
+			<input type="number" name="number3" id="number3" class="form-control num3" v-model="guesses[2]" placeholder="Number 3" maxlength="2" min="0" max="10" required>
 		  </div>
 		  <div class="form-group">
 			  <button type="submit" class="btn btn-primary btn-lg btn-block guessBtn" @click="guess($event)">GUESS!</button>
