@@ -75,6 +75,7 @@ var vm = new Vue({
           this.guesses.$set(i, 0);
         }
         this.message = "";
+        this.counter = 0;
       },
     }
 });
