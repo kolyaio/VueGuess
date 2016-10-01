@@ -26,9 +26,9 @@ var vm = new Vue({
           this.showTable = true;
 
           for(let i in [...Array(3)]) {
-            if(i == 0) {
-              //  console.log('///////////////////////////////////////////////')
-            }
+            // if(i == 0) {
+            //   //  console.log('///////////////////////////////////////////////')
+            // }
 
             if(this.randoms[i] == this.guesses[i]) {
               this.counter++;
@@ -68,11 +68,11 @@ var vm = new Vue({
         this.showTable = false;
 
         for(let i in this.randoms) {
-          this.randoms.$set(i, 0);
+          this.randoms.$set(i, 0)
         }
 
         for(let i in this.guesses) {
-          this.guesses.$set(i, 0);
+          this.guesses.$set(i, 0)
         }
         this.message = "";
         this.counter = 0;
